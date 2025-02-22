@@ -2,7 +2,7 @@
 import os
 import requests
 
-ZEN_CSS_URL = "https://raw.githubusercontent.com/Orbiva/zen-css/main/userChrome.css"
+ZEN_CSS_URL = "https://raw.githubusercontent.com/Orbiva/zen-css/refs/heads/main/update.py"
 
 APPDATA_PATH = os.path.expandvars(r"%APPDATA%\zen\Profiles")
 if not os.path.exists(APPDATA_PATH):
