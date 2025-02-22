@@ -1,4 +1,4 @@
-/* URLBar Background Blur test */ 
+/* URLBar Background Blur */ 
 #browser:has(#urlbar[open][zen-floating-urlbar="true"]) .browserContainer {
     pointer-events: none;
     filter: blur(10px) brightness(70%) saturate(50%) opacity(70%) !important;
@@ -6,4 +6,57 @@
 }
 #browser .browserContainer {
 transition: all 0.2s ease-in-out !important;
+}
+
+#urlbar[open][zen-floating-urlbar='true'] {
+  position: absolute !important;
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%) !important;
+}
+
+#urlbar[open][breakout-extend="true"] #urlbar-background {
+  border: none !important;
+}
+
+#star-button-box {
+  display: none;
+}
+
+#urlbar[open] .urlbarView-body-inner {
+  #urlbar[open] > .urlbarView > .urlbarView-body-outer > & {
+    border-top: none !important;
+  }
+}
+
+#urlbar[open] .urlbar-input-box {
+  width: 100% !important;
+  border: none;
+  outline: none;
+  min-height: 40px;
+  border-radius: 10px;
+  background: var(--custom-selected-tab-color) !important;
+  padding-inline: 15px;
+}
+
+#urlbar[open] .urlbar-input-container {
+  margin: 20px 0;
+}
+
+#urlbar[open] {
+  & #urlbar-background {
+    background-color: var(--custom-primary-color) !important;
+  }
+}
+
+#urlbar-background {
+  background-color: var(--custom-selected-tab-color) !important;
+}
+
+#tracking-protection-icon-container {
+  display: none !important;
+}
+
+.search-one-offs {
+  display: none !important;
 }
