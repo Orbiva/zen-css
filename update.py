@@ -2,7 +2,7 @@
 import os
 import requests
 
-ZEN_CSS_URL = "https://raw.githubusercontent.com/Orbiva/zen-css/refs/heads/main/userChrome.css"
+ZEN_CSS_URL = "https://raw.githubusercontent.com/Orbiva/zen-css/main/userChrome.css"
 
 APPDATA_PATH = os.path.expandvars(r"%APPDATA%\zen\Profiles")
 if not os.path.exists(APPDATA_PATH):
@@ -34,6 +34,3 @@ except requests.RequestException as e:
     print(f"❌ Failed to download Zen CSS: {e}")
 except IOError as e:
     print(f"❌ File write error: {e}")
-
-except requests.RequestException as e:
-    print(f"Failed to download Zen CSS: {e}")
