@@ -1,4 +1,4 @@
-/* URLBar Background Blur */
+/* URLBar Background Blur test */ 
 #browser:has(#urlbar[open][zen-floating-urlbar="true"]) .browserContainer {
     pointer-events: none;
     filter: blur(10px) brightness(70%) saturate(50%) opacity(70%) !important;
