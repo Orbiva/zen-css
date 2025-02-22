@@ -8,6 +8,7 @@
 transition: all 0.2s ease-in-out !important;
 }
 
+/* Moves Floating search bar to the center of the screem */
 #urlbar[open][zen-floating-urlbar='true'] {
   position: absolute !important;
   top: 50% !important;
