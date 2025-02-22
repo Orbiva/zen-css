@@ -7,3 +7,22 @@
 #browser .browserContainer {
 transition: all 0.2s ease-in-out !important;
 }
+
+/* Hide bookmark toolbar */
+#PersonalToolbar {
+    max-height: 0 !important;
+    opacity: 0 !important;
+    overflow: hidden !important;
+    transition: all 0.2s ease-out !important;
+    transition-delay: 0.4s !important;
+}
+
+/* Show toolbar when hovering blank space OR toolbar */
+#zen-appcontent-navbar-container:has(#customizableui-special-spring46:hover, /* Change with your Flexible Space id */
+    #customizableui-special-spring41:hover, /* Change with your Flexible Space id */
+    #customizableui-special-spring53:hover, /* Change with your Flexible Space id */
+    #customizableui-special-spring54:hover) #PersonalToolbar, /* Change with your Flexible Space id */
+#PersonalToolbar:hover {
+    max-height: 30px !important;
+    opacity: 1 !important;
+}
