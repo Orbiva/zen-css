@@ -219,6 +219,9 @@
             <a href="https://www.x.com" target="_self">
                 X
             </a>
+            <a href="https://namemc.com" target="_self">
+                NameMC
+            </a>
         </div>
     </div>
 
@@ -306,7 +309,7 @@
             if (event.key === 'Enter') {
                 const query = event.target.value;
                 if (query) {
-                    window.open(`https://www.google.com/search?q=${encodeURIComponent(query)}`, '_blank');
+                    window.open(`https://www.google.com/search?q=${encodeURIComponent(query)}`, '_self');
                     event.target.value = '';
                 }
             }
